@@ -1,0 +1,35 @@
+Pandas: comparacao com o Excel
+Tabela = DataFrame
+Colunas = Series
+grafico = sclatter plot (com uma linha de codigo vc faz o grafico) base.plot.scatter(x='Segundos', y='Vendas');
+
+Enquanto no excel conseguimos formatar cada celula, no Pandas a coluna tem o mesmo formato
+
+----------------------------------------------------------------------------------------
+
+#A partir daqui comecamos o codigo com Pandas
+import pandas as pd
+
+#importando nossa base do Excel para o Pandas que renomeamos como pd
+base = pd.read_excel('05. Pandas x Excel.xlsx')
+
+#No Excel temos tabela, no Pandas DataFrame
+type(base)
+
+#Usamos esse comando para abrir a planilha do Excel, exibindo 21 linhhas
+base.head(21)
+
+#Saber qual é o tipo de cada coluna: int, float
+base.dtypes
+
+#Filtrar os dados acima de 800000
+base[base['Vendas $'] > 800000]
+
+#Criando um grafico no Pandas
+base.plot.scatter(x='Segundos', y='Vendas');
+
+#Calcular media
+base['Vendas $'].mean()
+
+#Chamar todas as operacoes estatisticas
+base['Vendas $'].describe()
