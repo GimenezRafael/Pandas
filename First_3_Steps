@@ -21,3 +21,8 @@ base.shape
 
 #call the previous 3 information at once.: the 5 first lines, the 5 last lines and the DB size
 display(base)
+
+We will always have to follow these 3 steps
+1. Import the Pandas: import Pandas the pd
+2. Import base: base = pd.read_csv ('file name')
+3. View the base: display(base)
