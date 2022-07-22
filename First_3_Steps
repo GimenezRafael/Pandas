@@ -1,0 +1,23 @@
+#importing Pandas as pd
+import pandas as pd
+
+#importing the file excel
+base = pd.read_csv("07. Pandas.csv")
+
+#the type of our data base is DataFrame
+type(base)
+
+#by default, the head() call the first 5 lines
+base.head()
+
+#but we can call more lines, if we put the number inside of ( )
+base.head(15)
+
+#tail() by default call the last 5 lines
+base.tail()
+
+#size of our data base: 10 columns and 7100 lines
+base.shape
+
+#call the previous 3 information at once.: the 5 first lines, the 5 last lines and the DB size
+display(base)
