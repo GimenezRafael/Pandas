@@ -1,0 +1,50 @@
+#estamos chamando os valores de dados_venda
+dados_venda
+
+#estamos chamando o segundo valor da primeira linha
+#pois 0 nesse caso é a primeira linha e 1 a segunda coluna
+dados_venda[0][1]
+
+# Mostrando as informações estatísticas dessa matriz
+dados_venda = np.array([[150000,230000,82000,143000,184000],[5,8,8,5,12]])
+
+# Média da primeira linha
+np.mean(dados_venda[0])
+
+# Média da segunda linha
+np.mean(dados_venda[1])
+
+# Mediana da primeira linha
+# é o valor que esta no meio da minha distribuicao, ou seja, se temos esse valores [150000,230000,82000,143000,184000] o 150000 é o valor do meio
+np.median(dados_venda[0])
+
+# Desvio padrão da primeira linha
+np.std(dados_venda[0])
+
+# Considerando esses 2 arrays
+array1 = np.array([1,2,3,4,5])
+array2 = np.array([7,8,9,10,11])
+
+# Soma
+array1 + array2
+
+# Multiplicação por um valor
+array1 * 2
+
+# Multiplicação de arrays
+array1 * array2
+
+# Potência
+np.power(array2,array1)
+
+# Soma dos valores da primeira linha
+np.sum(array1)
+
+# Soma acumulada dos valores da primeira linha
+np.cumsum(array1)
+
+# Valor mínimo
+array1.min()
+
+# Valor máximo
+array1.max()
