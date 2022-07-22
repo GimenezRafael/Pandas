@@ -1,0 +1,38 @@
+**We can also create a new DataFrame using a dictionary:**
+
+# Creating dictionary
+dic = {
+    "funcionarios": ['Lucas','Bia','Jean','Gabi','Pedro'],
+    "venda_valor": [150000,230000,82000,143000,184000],
+    "comissao": [5,8,8,5,12]
+}
+
+#Database type
+type(dic)
+
+#seeing the dictionary
+dic
+
+# Turning this dictionary into a DataFrame
+base_dic = pd.DataFrame(dic)
+
+base_dic
+
+# and now we can check the conversation we did in our database, from dicionario to DataFrame
+# IMPORTANT: WE ALWAYS need to convert our data to DataFrame (spreadsheet)
+type(base_dic)
+
+#calling only one Series (column) from a DataFrame (spreadsheet)
+series_funcionarios = base_dic["funcionarios"]
+
+series_funcionarios
+
+#these are the values of this column
+series_funcionarios.values
+
+#these are the indexes of this column
+series_funcionarios.index
+
+#discovering the type of this data
+#and it's going to be Series because we just call the Series (column) 'funcionarios'
+type(series_funcionarios)
