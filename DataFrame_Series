@@ -36,3 +36,13 @@ series_funcionarios.index
 #discovering the type of this data
 #and it's going to be Series because we just call the Series (column) 'funcionarios'
 type(series_funcionarios)
+
+
+**To filter a single Series (column) and remain a DataFrame, we can do:**
+**series = DataFrame[["coluna"]]**
+
+#now we're going to keep the Series 'funcionarios' as DataFrame
+dataframe_funcionarios = base_dic[['funcionarios']]
+
+dataframe_funcionarios
+type(dataframe_funcionarios)
